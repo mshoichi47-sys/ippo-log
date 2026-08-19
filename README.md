@@ -1,12 +1,20 @@
 # 一歩ログ（プロトタイプ）
 
-信仰実践の学習・振り返りを記録するための、単一HTMLファイルで動くプロトタイプです。
-React（UMDビルド）とBabel Standaloneをブラウザ上で読み込んで動作するため、ビルド不要でそのまま開けます。
+信仰実践の学習・振り返りを記録するための、Vite + React製プロトタイプです。
 
-## 使い方
+公開URL: https://mshoichi47-sys.github.io/ippo-log/
 
-- `index.html` をブラウザで直接開く
-- または GitHub Pages 経由でこのリポジトリを公開している場合は、そのURLにアクセスするだけで動作します
+## 開発
+
+```bash
+npm install
+npm run dev      # ローカル開発サーバー
+npm run build    # dist/ にビルド
+```
+
+## デプロイ
+
+`main` にはソースのみを置いています。`npm run build` で `dist/` を作り、その中身を `gh-pages` ブランチのルートにpushするとGitHub Pagesに反映されます。
 
 ## 注意
 
